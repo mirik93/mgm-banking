@@ -1,6 +1,12 @@
-{% extends "index.html" %}
-{% block content %}
 
+<!-- No extend needed here because you are going to use this HTML as a modal 
+    If this were a seperate page, then it would need to be extended.
+
+    As an experiment, add the extends index.html and block content back and see the error you encounter.
+
+    It should be a "Maximum recurrsion reached" error which means the template is trying to import itself, multiple times...
+    over and over again.
+-->
 <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -37,5 +43,3 @@
         </div>
     </div>
 </div>
-
-{% endblock content %}
