@@ -15,13 +15,12 @@ from flask_login import login_user, current_user, logout_user
 @app.route("/")
 @app.route("/home")
 def home():
-    
     return render_template("index.html")
 
-@app.route("/creditcard")
+
+@app.route("/contact")
 def creditcard():
-    
-    return render_template("creditcards.html")
+    return render_template("contact.html")
 
 @app.route("/register",methods=["GET","POST"])
 def createUser():
