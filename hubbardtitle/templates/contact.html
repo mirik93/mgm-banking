@@ -3,55 +3,86 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MGM BANK</title>
+	<title>Hubbard Title</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="/mgmbanking/static/css/style.css" rel="stylesheet">
+	<link href="../static/css/style.css" rel="stylesheet">
 	<link rel="shortcut icon" href="../static/img/ICON.png">
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md bg-light sticky-top">
-<div class="container-fluid">
-	<a class="navbar-brand" href="{{ url_for('home') }}"><img src="../static/img/HUBBARD.jpg"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="{{ url_for('home') }}">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Credit Cards</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Checking & Savings</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Auto Loans</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Business</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Commercial</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" data-target=""><i class="fas fa-search"></i> Search</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="modal" data-target="#modalLoginForm" href="#"><i class="far fa-user"></i> Login</a>
-			</li>
-		</ul>
+	<nav class="navbar navbar-expand-md bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="{{ url_for('home') }}"><img src="../static/img/HUBBARD.jpg"></a>
+		<a class="logo-title"><h1></h1></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="dropdown active">
+					<a class="nav-link" href="#">About Hubbard</a>
+					<div class="dropdown-content">
+					  <a class="droplinks" href="#">Who We Are</a>
+					  <a class="droplinks" href="#">News</a>
+					  <a class="droplinks" href="#">Opportunities</a>
+					  <a class="droplinks" href="#">Contact Hubbard Title</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Offices</a>
+				</li>
+				<li class="dropdown">
+					<a class="nav-link" href="#">Clients</a>
+					<div class="dropdown-content">
+					  <a class="droplinks" href="#">Attorneys</a>
+					  <a class="droplinks" href="#">Attorney Events</a>
+					  <a class="droplinks" href="#">Brokers</a>
+					  <a class="droplinks" href="#">Lenders</a>
+					  <a class="droplinks" href="#">Commercial</a>
+					  <a class="droplinks" href="#">Construction</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a class="nav-link" href="#">Resources</a>
+					<div class="dropdown-content">
+					  <a class="droplinks" href="#">Net Sheets</a>
+					  <a class="droplinks" href="#">PT Live</a>
+					  <a class="droplinks" href="#">Proper Education</a>
+					  <a class="droplinks" href="#">Underwriters</a>
+					  <a class="droplinks" href="#">Useful Links</a>
+					  <a class="droplinks" href="#">Documents/Forms</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a class="nav-link" href="#">Community</a>
+					<div class="dropdown-content">
+					  <a class="droplinks" href="#">Hubbard Giving</a>
+					  <a class="droplinks" href="#">Hubbard Kindness</a>
+					</div>
+				</li>
+				<li class="nav-item">
+        		<a href="{{ url_for('login') }}">
+          		<button type="button" class="btn-1 btn-outline-dark"><a-1>Login/Order Title</a-1></button>
+        		</a>
+        		</li>
+
+			</ul>
+		</div>
 	</div>
+	</nav>
 </div>
-</nav><div class="bg">
+
+
+
+
+
+
 <!--Section: Contact v.2-->
 <section class="contact">
         <!--Section heading-->

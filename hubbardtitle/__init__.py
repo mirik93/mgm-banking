@@ -12,4 +12,4 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app,db)
 
-from mgmbanking import routes, models
+from hubbardtitle import routes, models

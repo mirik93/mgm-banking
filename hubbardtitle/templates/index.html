@@ -10,26 +10,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<<<<<<< HEAD
 	<link href="../static/css/style.css" rel="stylesheet">
 	<link rel="shortcut icon" href="../static/img/ICON.png">
-=======
-	<link href="/mgmbanking/static/css/style.css" rel="stylesheet">
-	<link rel="shortcut icon" href="../static/img/mgmbank.png">
->>>>>>> db801e459c57eeaff388cf4aa85316f441e6b8c8
 </head>
 <body>
 
-<!-- Navigation --> 
+<!-- Navigation -->
 	<nav class="navbar navbar-expand-md bg-light sticky-top">
 	<div class="container-fluid">
-<<<<<<< HEAD
 		<a class="navbar-brand" href="{{ url_for('home') }}"><img src="../static/img/HUBBARD.jpg"></a>
 		<a class="logo-title"><h1></h1></a>
-=======
-		<a class="navbar-brand" href="index.html"><img src="../static/img/mgmbank.png"></a>
-		<a class="logo-title"><h1>MGM BANK</h1></a>
->>>>>>> db801e459c57eeaff388cf4aa85316f441e6b8c8
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -77,31 +67,20 @@
 					</div>
 				</li>
 				<li class="nav-item">
-<<<<<<< HEAD
+				<a href="{{ url_for('login') }}">
 					<button type="button" class="btn-1 btn-outline-dark"><a-1>Login/Order Title</a-1></button>
-=======
-					<a class="nav-link" data-toggle="modal" data-target="#modalLoginForm" href="{{ url_for('login') }}"> <i class="far fa-user"></i>Login</a>
->>>>>>> db801e459c57eeaff388cf4aa85316f441e6b8c8
+				</a>
 				</li>
 
 			</ul>
 		</div>
 	</div>
 	</nav>
-<<<<<<< HEAD
 </div>
-=======
-<!-- Add this include for your modal, I've also seperated your HTML files to be more condusive to the flask template engine.
-	I've created a "home.html" which serves as the home page content. Otherwise, you would have the same content showing up on multiple pages.
-
-	Keep that in mind for the future.
--->
-{% include 'login.html' %}
->>>>>>> db801e459c57eeaff388cf4aa85316f441e6b8c8
 
 
+<!--- Image Slider -->
 
-<<<<<<< HEAD
 	<div id="demo" class="carousel slide" data-ride="carousel">
 
 		<ul class="carousel-indicators">
@@ -255,10 +234,6 @@
 	<img class="img1" src="../static/img/ourmission.jpg">
 </div>  
 <div>
-=======
-	{% block content %}{% endblock content %}
-</body>
->>>>>>> db801e459c57eeaff388cf4aa85316f441e6b8c8
 
 <br>
 <br>
@@ -445,3 +420,11 @@
 	  <!-- Footer -->
 
 </html>
+<!--  
+echo "# hubbardstreet" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/mirik93/hubbardstreet.git
+git push -u origin master
+-->

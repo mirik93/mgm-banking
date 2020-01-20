@@ -1,5 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
-from mgmbanking import app,db
+from hubbardtitle import app,db
 from werkzeug.security import generate_password_hash, check_password_hash
 
 #import date time
